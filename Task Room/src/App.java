@@ -7,7 +7,7 @@ public class App {
         // Criando a sala virtual
         Publisher taskRoom = new Publisher();
 
-        // Alunos se inscrevem na sala
+        // Inscreve-se na sala
         TaskObserver student1 = new Subscribers("Karielly");
         TaskObserver student2 = new Subscribers("Jean Carlos");
 
@@ -18,12 +18,11 @@ public class App {
         taskRoom.publishTask("Demonstrar padrão de projeto.");
         System.out.println("");
         System.out.println("============== Publicando outra tarefa (apenas Karielly será notificada) ================");
-        // Aluno Jean Carlos cancela inscrição na sala
+        // Jean Carlos cancela inscrição na sala
         taskRoom.unsubscribe(student2);
 
         // Publicando outra tarefa (apenas Karielly será notificada)
         taskRoom.publishTask("Fazer relatório de POO.");
         System.out.println("");
     }
-
 }
