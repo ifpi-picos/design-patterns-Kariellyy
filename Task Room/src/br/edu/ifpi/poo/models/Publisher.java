@@ -3,7 +3,7 @@ package br.edu.ifpi.poo.models;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TaskRoom implements TaskObserver {
+public class Publisher implements TaskObserver {
     private List<TaskObserver> subscribers = new ArrayList<>();
 
     public void subscribe(TaskObserver subscriber) {

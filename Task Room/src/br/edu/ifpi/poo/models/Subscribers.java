@@ -1,9 +1,9 @@
 package br.edu.ifpi.poo.models;
 
-public class Student implements TaskObserver {
+public class Subscribers implements TaskObserver {
     private String name;
 
-    public Student(String name) {
+    public Subscribers(String name) {
         this.name = name;
     }
 

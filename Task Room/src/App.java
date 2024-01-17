@@ -1,15 +1,15 @@
-import br.edu.ifpi.poo.models.Student;
-import br.edu.ifpi.poo.models.TaskRoom;
+import br.edu.ifpi.poo.models.Subscribers;
+import br.edu.ifpi.poo.models.Publisher;
 import br.edu.ifpi.poo.models.TaskObserver;
 
 public class App {
     public static void main(String[] args) throws Exception {
         // Criando a sala virtual
-        TaskRoom taskRoom = new TaskRoom();
+        Publisher taskRoom = new Publisher();
 
         // Alunos se inscrevem na sala
-        TaskObserver student1 = new Student("Karielly");
-        TaskObserver student2 = new Student("Jean Carlos");
+        TaskObserver student1 = new Subscribers("Karielly");
+        TaskObserver student2 = new Subscribers("Jean Carlos");
 
         taskRoom.subscribe(student1);
         taskRoom.subscribe(student2);
