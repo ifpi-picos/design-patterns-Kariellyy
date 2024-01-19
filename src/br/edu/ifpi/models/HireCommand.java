@@ -3,8 +3,6 @@ package src.br.edu.ifpi.models;
 import java.util.List;
 
 public class HireCommand implements Command {
-    // O comando HireCommand é uma funcionalidade do pragrama para contratar um
-    // Ele é um comando concreto
 
     private List<Employee> employees;
     private Employee employee;
